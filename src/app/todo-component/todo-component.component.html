@@ -1,0 +1,27 @@
+<div class="app">
+    <header>
+        <h1>TODO APP</h1>
+    </header>
+</div>
+<div>
+    <!-- <form (submit)="addTask()">
+
+    <input type="text" 
+    placeholder="enter todo.."
+    name="inputTodo"
+    [(ngModel)]="inputTodo"/>
+<input type="submit" value="add task"class="todo-submit"/>    
+</form> -->
+    <form (submit)="addTask()">
+
+        <input type="text" placeholder="enter todo.." name="inputTodo" [(ngModel)]="inputTodo" />
+        <input type="submit" value="add task" class="todo-submit" />
+    </form>
+
+</div>
+<div class="todos" *ngFor="let todo of todos;let i =index;" class="todo {{(todo.completed?'done':'')}}">
+    <div class="id">{{i+1}}</div>
+    <div class="task" (click)="toggleTask(i)">{{todo.task}}</div>
+    <button type="button" class="btn btn-primary" (click)="deleteTask(i)">Remove</button>
+
+</div>
