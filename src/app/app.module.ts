@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { TodoComponentComponent } from './todo-component/todo-component.component';
 import { AuthComponent } from './auth/auth/auth.component';
 import { ProfileComponent } from './profile/profile.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoComponentComponent,
     AuthComponent,
-    ProfileComponent
+    ProfileComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
