@@ -5,11 +5,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodoComponentComponent } from './todo-component/todo-component.component';
+import { AuthComponent } from './auth/auth/auth.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponentComponent
+    TodoComponentComponent,
+    AuthComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

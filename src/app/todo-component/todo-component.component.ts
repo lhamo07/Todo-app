@@ -10,7 +10,7 @@ import { Todo } from '../model/Todo';
 export class TodoComponentComponent implements OnInit {
 
   todos!: Todo[];
-  inputTodo: string="";
+  // inputTodo: string="";
   constructor() { }
 
   ngOnInit(): void {
@@ -38,12 +38,13 @@ export class TodoComponentComponent implements OnInit {
   // addTask(value:any) {
   //   this.todos.push(value)
   // }
-  addTask(){
-    this.todos.push({
-      task:this.inputTodo,
-      completed:false
-    });
-    this.inputTodo="";
+  addTask(item:any){
+    // this.todos.push({
+    //   task:this.inputTodo,
+    //   completed:false
+    // });
+    // this.inputTodo="";
+this.todos.push(item)
   }
 
 
